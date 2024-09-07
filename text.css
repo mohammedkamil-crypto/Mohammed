@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color:#fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "montserrat",sans-serif;
+}
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+ 
+}
+.animated-text span{
+    position: relative;
+
+}
+.animated-text span::before{
+    content: "  mohammed kamil. I'm a web developer and shuayb is my friend.you can find our websites below! ";
+    color: #ff7f50;
+    animation: words 20% infinite;
+
+
+}
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: calc(100% + 8px);
+    background-color: #2f3542;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;   
+    }
+}
+
+@keyframes words {
+
+    0%,20%{
+        content: "YouTuber";
+    }
+    21%,40%{
+        content: "Gamer";
+    }
+    41%,60%{
+        content: "Web Developer";
+    }
+    61%,80%{
+        content: "Coder";
+    }
+    81%,100%{
+        content: "FootBaller";
+    }  
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+width: 0;
+    }
+}
+
+
+
+
+
+
