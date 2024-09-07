@@ -21,7 +21,7 @@ body{
 
 }
 .animated-text span::before{
-    content: "  mohammed kamil. I'm a web developer and shuayb is my friend.you can find our websites below! ";
+    content: "  mohammed kamil. I'm a web developer and shuayb is my friend.you can find our websites below ";
     color: #ff7f50;
     animation: words 20% infinite;
 
